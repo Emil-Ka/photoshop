@@ -1,0 +1,23 @@
+.sidebar {
+    background: var(--inverted-bg-color);
+    position: relative;
+    width: var(--sidebar-width);
+    transition: width 0.3s;
+}
+
+.collapsed {
+    width: var(--sidebar-width-collapsed);
+}
+
+.switchers {
+    position: absolute;
+    bottom: var(--gap-l);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+    & > *:first-child {
+        margin-bottom: var(--gap-l);
+    }
+}

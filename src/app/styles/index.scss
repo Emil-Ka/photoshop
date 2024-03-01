@@ -1,0 +1,26 @@
+@import "reset";
+@import "variables/global";
+
+.app {
+    font: var(--font-m);
+    background: var(--bg-color);
+    color: var(--primary-color);
+    min-height: 100vh;
+    display: grid;
+    grid-template:
+        "navbar navbar" auto
+        "sidebar page" 1fr / auto 1fr;
+}
+
+.navbar {
+    grid-area: navbar;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.page {
+    grid-area: page;
+    padding: var(--gap-l);
+}
